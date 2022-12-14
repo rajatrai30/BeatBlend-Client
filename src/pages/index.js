@@ -7,6 +7,8 @@ import TopCharts from './TopCharts';
 import AroundYou from './AroundYou';
 import Login from './Login';
 import Home from './Home';
+import Contact from './Contact';
+import Team from './Team';
 
 export {
   Discover,
@@ -18,4 +20,6 @@ export {
   AroundYou,
   Login,
   Home,
+  Contact,
+  Team,
 };
