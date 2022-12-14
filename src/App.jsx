@@ -27,10 +27,12 @@ const App = () => {
             </Routes>
           </div>
           <div className="xl:sticky relative top-0 h-fit">
-            <div className="lg:hidden pb-5">
+            <div className="hidden lg:hidden pb-5">
               <Home />
             </div>
-            <TopPlay />
+            <div className="hidden sm:hidden md:hidden lg:block xl:block 2xl:block pb-5">
+              <TopPlay />
+            </div>
           </div>
         </div>
       </div>
