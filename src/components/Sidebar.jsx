@@ -10,7 +10,7 @@ const links = [
   { name: 'Around You', to: '/around-you', icon: HiOutlinePhotograph },
   { name: 'Top Artists', to: '/top-artists', icon: HiOutlineUserGroup },
   { name: 'Top Charts', to: '/top-charts', icon: HiOutlineHashtag },
-  { name: 'Contact', to: '/contact', icon: HiOutlineChat },
+  { name: 'Contact Us', to: '/contact', icon: HiOutlineChat },
 
 ];
 
@@ -20,7 +20,7 @@ const NavLinks = ({ handleClick }) => (
       <NavLink
         key={item.name}
         to={item.to}
-        className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400 hover:text-cyan-400"
+        className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400 hover:text-[#981AB2]"
         onClick={() => handleClick && handleClick()}
       >
         <item.icon className="w-6 h-6 mr-2" />
@@ -54,10 +54,10 @@ const Sidebar = () => {
         )}
       </div>
 
-      <div className={`absolute top-0 h-screen w-2/3 bg-gradient-to-tl from-white/10 to-[#483D8B] backdrop-blur-lg z-10 p-6 md:hidden smooth-transition ${mobileMenuOpen ? 'left-0' : '-left-full'}`}>
+      <div className={`absolute top-0 h-screen w-2/3 bg-gradient-to-tl from-white/10 to-[#191624] backdrop-blur-lg z-10 p-6 md:hidden smooth-transition ${mobileMenuOpen ? 'left-0' : '-left-full'}`}>
         <div className="flex flex-row items-center pt-4">
           <img src={logo} alt="logo" className="w-14 h-14 rounded-2xl" />
-          <h2 className="text-2xl text-[#191624] pl-3 font-bold">BeatBlend</h2>
+          <h2 className="text-2xl text-[#0e0b1b] pl-3 font-bold">BeatBlend</h2>
         </div>        <NavLinks handleClick={() => setMobileMenuOpen(false)} />
       </div>
     </>
